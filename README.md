@@ -23,6 +23,7 @@
 ## Problem Statement 
 
 - In the era of rapid industrialization and digital transformation, our environment is facing unprecedented challenges like <strong>plastic pollution, e-waste, deforestation, water scarcity, and climate change.</strong>
+
 - EcoSat addresses this challenge by leveraging <strong>Earth Observation Data and Modern Machine Learning Techniques</strong> to automatically detect and visualize environmental degradation over time.
 
 ## Project Objectives
