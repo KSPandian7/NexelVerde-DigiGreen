@@ -1,1 +1,69 @@
 # NexelVerde-DigiGreen
+
+## EcoSat: A GIS-Powered Environmental Monitoring Platform
+
+EcoSat is a geospatial intelligence platform designed to detect and quantify key environmental changes—specifically deforestation, industrialization, plastic waste accumulation, water scarcity, and river encroachment—by comparing satellite imagery across time. Built as part of the DigiGreen Hackathon 2025, the project uses deep learning, remote sensing, and GIS techniques to analyze high-resolution satellite data and generate actionable insights to support environmental conservation efforts.
+
+## Problem Statement 
+
+In an era of rapid industrialization and digital transformation, our environment is facing unprecedented challenges—including plastic pollution, e-waste, deforestation, water scarcity, and climate change.EcoSat addresses this challenge by leveraging Earth observation data and modern machine learning techniques to automatically detect and visualize environmental degradation over time.
+
+## Project Objectives
+
+1. Detect deforestation and industrialization by analyzing land cover changes over time.
+2. Identify and quantify plastic waste accumulation using satellite imagery of water bodies and urban zones.
+3. Analyze water scarcity and monitor river area encroachment and track shifts in natural watercourse boundaries.
+4. Present changes in an interpretable format with spatial overlays, area quantification, and time-based rate analysis.
+5. Build a user-friendly web-based frontend that allows users to upload satellite image pairs and view analysis results, including segmented change maps, rate of change, and classified areas.
+
+## Project Workflow
+
+1. Collect Real World Data - Satellite imagery, historical GIS layers, and ground-level photographs are gathered for the targeted regions.
+2. Database - The collected data is stored using NoSQL databases (e.g., MongoDB) for efficient access and scalability.
+3. Image Preprocessing & Comparison - Historical and recent images are aligned and preprocessed using geospatial overlays to standardize spatial resolution and format.
+4. Build - A deep learning model is trained to detect changes in land cover and classify them into categories like deforestation, industrialization, plastic waste, and water scarcity.
+5. Results Generation - The model generates output masks, metrics, and statistical summaries. Key outputs include heatmaps, impact indicators, and encroachment maps.
+6. Report - The results are integrated into an interactive frontend interface that enables users to view, and filter reports relevant to specific regions and timeframes.
+
+![WhatsApp Image 2025-07-14 at 00 41 45_e449ed6d](https://github.com/user-attachments/assets/98aff9f8-7137-401c-9e3d-5aaf82824162)
+
+## Temporal Analysis: Image-to-Insight Pipeline
+
+EcoSat performs environmental change detection by comparing satellite images of the same geographic region captured at different points in time. The process begins by selecting two temporally separated satellite images of the target area—for instance, images from the Thirumangalam–Sirumangadu region showing changes within a 5.7 km perimeter. These images undergo preprocessing, including georeferencing, normalization, cloud removal, and vegetation/water index calculations (NDVI, NDWI), followed by cropping to the polygonal region of interest.
+
+![WhatsApp Image 2025-07-14 at 00 06 06_abd459ef](https://github.com/user-attachments/assets/db9e42bf-5a69-4ecf-8ba8-62c4abbb98a0)
+![WhatsApp Image 2025-07-14 at 00 06 07_946bc6c2](https://github.com/user-attachments/assets/d79fa0ed-6dce-472d-8cf1-c01cc8343229)
+
+The core analysis is carried out using a Siamese UNet deep learning model, which identifies and segments areas of significant land cover change. These changes are classified into categories such as deforestation, industrialization, water expansion, or plastic waste accumulation based on spectral and spatial characteristics. A post-processing classifier interprets these results, distinguishing features like industrial sheds, new water bodies, or pollution zones. Once segmented and labeled, the affected areas are quantified in square kilometers or hectares, and rates of change are calculated based on the time difference between the two images. For example, a detected shift of 0.9 km² from undeveloped land to industrial structures over five years indicates a development rate of 0.18 km² per year. Finally, all outputs are visualized using overlays, heatmaps, and interactive charts. This end-to-end pipeline transforms raw satellite imagery into actionable spatial intelligence for environmental monitoring and planning.
+
+## Workflow Summary
+
+1.  Acquire temporally separated satellite images for the same location.
+2.  Preprocess images: align, crop, normalize, calculate indices (NDVI/NDWI).
+3.  Input the pair into a Siamese UNet deep learning model.
+4.  Generate a pixel-level change mask and classify changes.
+5.  Calculate area and rate of change over time.
+6.  Visualize the results and generate exportable reports and maps.
+
+## Model Architecture
+
+We use a Siamese UNet model that takes a pair of satellite images as input and outputs a binary or multi-class change mask. The encoder is based on EfficientNet-B4, pretrained on ImageNet, and the decoder follows a standard UNet architecture with skip connections.A binary classifier for plastic waste presence trained on annotated water body images.NDWI-based water mask analyzer to identify dry zones and water recession.River boundary detector using edge detection + temporal overlay comparisons.
+
+## Tech Stack
+
+### Core Technologies
+
+1. Deep Learning: PyTorch, TensorFlow, Albumentations
+2. Satellite Data: Google Earth Engine, SentinelHub, Landsat 8
+3. GIS and Raster Processing: Rasterio, GDAL, GeoPandas, OpenCV
+4. Frontend : Leaflet.js, React.js
+5. Backend/API: Flask or FastAPI
+6. Visualization: Matplotlib, Folium, QGIS
+
+## Future Enhancement
+
+While EcoSat currently offers robust capabilities for detecting deforestation, industrialization, plastic accumulation, and water scarcity using satellite imagery, there are several directions we plan to explore to extend its value. In the near future, we aim to integrate real-time data streaming from platforms like Google Earth Engine to support dynamic updates rather than static comparisons. Additionally, we plan to implement advanced cloud-removal techniques and seasonal normalization to improve model consistency across different climates and times of year. Our team is also exploring support for additional change categories, such as agricultural expansion and wetland loss. On the user interface side, we envision building a fully interactive dashboard that allows users to upload their own image pairs, visualize changes through a time slider, and export detailed PDF reports for local policy use. Long term, EcoSat could evolve into a mobile-friendly tool that provides rapid alerts to environmental authorities when significant land use changes are detected, enabling more timely interventions and conservation decisions.
+ 
+## Conclusion
+
+EcoSat was developed with the goal of transforming raw satellite imagery into actionable environmental insights. By combining the power of deep learning with geospatial data analysis, the platform enables efficient detection of critical land-use changes—such as deforestation, industrialization, plastic accumulation, water scarcity, and river encroachment—across time. This tool is designed to support researchers, environmental agencies, and policymakers in understanding the pace and scale of ecological transformation. As we continue to expand its capabilities and refine its accuracy, EcoSat represents a meaningful step toward scalable, data-driven environmental monitoring for a more sustainable future.
