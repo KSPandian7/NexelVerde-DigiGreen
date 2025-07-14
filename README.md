@@ -40,15 +40,28 @@
 
 
 ## Project Workflow
-![WhatsApp Image 2025-07-14 at 00 41 45_e449ed6d](https://github.com/user-attachments/assets/98aff9f8-7137-401c-9e3d-5aaf82824162)
+<p align="center">
+  
+<img width="700" height="500" src="https://github.com/KSPandian7/NexelVerde-DigiGreen/blob/main/COLLECT%20REAL-WORLD%20DATA%20(3).png">
+</p>
+<br>
 
-1. Collect Real World Data - Satellite imagery, historical GIS layers, and ground-level photographs are gathered for the targeted regions.
-2. Database - The collected data is stored using NoSQL databases (e.g., MongoDB) for efficient access and scalability.
-3. Image Preprocessing & Comparison - Historical and recent images are aligned and preprocessed using geospatial overlays to standardize spatial resolution and format.
-4. Build - A deep learning model is trained to detect changes in land cover and classify them into categories like deforestation, industrialization, plastic waste, and water scarcity.
-5. Results Generation - The model generates output masks, metrics, and statistical summaries. Key outputs include heatmaps, impact indicators, and encroachment maps.
-6. Report - The results are integrated into an interactive frontend interface that enables users to view, and filter reports relevant to specific regions and timeframes.
+<strong>1. Collect Real World Data </strong>- Satellite imagery, historical GIS layers, and ground-level photographs are gathered for the targeted regions.<br>
 
+<strong>2. Database</strong> - The collected data is stored using NoSQL databases (e.g., MongoDB) for efficient access and scalability.<br>
+
+<strong>3. Image Preprocessing & Comparison </strong>- Historical and recent images are aligned and preprocessed using geospatial overlays to standardize spatial resolution and format.<br>
+
+<strong>4. Build</strong> - A deep learning model is trained to detect changes in land cover and classify them into categories like deforestation, industrialization, plastic waste, and water scarcity.<br>
+
+<strong>5. Results Generation</strong> - The model generates output masks, metrics, and statistical summaries. Key outputs include heatmaps, impact indicators, and encroachment maps.<br>
+
+<strong>6. Report </strong>- The results are integrated into an interactive frontend interface that enables users to view, and filter reports relevant to specific regions and timeframes.<br>
+<br>
+<p align="center">
+  <strong>Technical aspects of workflow</strong>
+</p>
+<br>
 
 <p align="center">
  
