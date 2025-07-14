@@ -28,11 +28,16 @@
 
 ## Project Objectives
 
-1. Detect deforestation and industrialization by analyzing land cover changes over time.
-2. Identify and quantify plastic waste accumulation using satellite imagery of water bodies and urban zones.
-3. Analyze water scarcity and monitor river area encroachment and track shifts in natural watercourse boundaries.
-4. Present changes in an interpretable format with spatial overlays, area quantification, and time-based rate analysis.
-5. Build a user-friendly web-based frontend that allows users to upload satellite image pairs and view analysis results, including segmented change maps, rate of change, and classified areas.
+🌳 Detect deforestation and industrialization by <strong>analyzing land cover changes </strong>over time.<br>
+
+🛰️ Identify and quantify <strong>plastic waste accumulation using satellite imagery of water bodies</strong> and urban zones.<br>
+
+🚱 Analyze water scarcity and monitor river area encroachment and <strong>track shifts in natural watercourse boundaries.</strong><br>
+
+💻 Present changes in an interpretable format with spatial overlays, area quantification, and time-based rate analysis.<br>
+
+🔚 Build a user-friendly web-based frontend that allows users to upload satellite image pairs and view analysis results, including segmented change maps, rate of change, and classified areas.<br>
+
 
 ## Project Workflow
 <p align="center">
