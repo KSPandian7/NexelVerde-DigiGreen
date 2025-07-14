@@ -71,12 +71,25 @@
 
 ## Temporal Analysis: Image-to-Insight Pipeline
 
-EcoSat performs environmental change detection by comparing satellite images of the same geographic region captured at different points in time. The process begins by selecting two temporally separated satellite images of the target area—for instance, images from the Thirumangalam–Sirumangadu region showing changes within a 5.7 km perimeter. These images undergo preprocessing, including georeferencing, normalization, cloud removal, and vegetation/water index calculations (NDVI, NDWI), followed by cropping to the polygonal region of interest.
+- EcoSat performs environmental change detection by comparing satellite images of the same geographic region captured at different points in time.
+  
+- The process begins by selecting two temporally separated satellite images of the target area—for instance, images from the Thirumangalam–Sirumangadu region showing changes within a 5.7 km perimeter.
+  
+- These images undergo preprocessing, including georeferencing, normalization, cloud removal, and vegetation/water index calculations (NDVI, NDWI), followed by cropping to the polygonal region of interest.
+  
 
 ![WhatsApp Image 2025-07-14 at 00 06 06_abd459ef](https://github.com/user-attachments/assets/db9e42bf-5a69-4ecf-8ba8-62c4abbb98a0)
 ![WhatsApp Image 2025-07-14 at 00 06 07_946bc6c2](https://github.com/user-attachments/assets/d79fa0ed-6dce-472d-8cf1-c01cc8343229)
 
-The core analysis is carried out using a Siamese UNet deep learning model, which identifies and segments areas of significant land cover change. These changes are classified into categories such as deforestation, industrialization, water expansion, or plastic waste accumulation based on spectral and spatial characteristics. A post-processing classifier interprets these results, distinguishing features like industrial sheds, new water bodies, or pollution zones. Once segmented and labeled, the affected areas are quantified in square kilometers or hectares, and rates of change are calculated based on the time difference between the two images. For example, a detected shift of 0.9 km² from undeveloped land to industrial structures over five years indicates a development rate of 0.18 km² per year. Finally, all outputs are visualized using overlays, heatmaps, and interactive charts. This end-to-end pipeline transforms raw satellite imagery into actionable spatial intelligence for environmental monitoring and planning.
+- The core analysis is carried out using a Siamese UNet deep learning model, which identifies and segments areas of significant land cover change.
+  
+- These changes are classified into categories such as deforestation, industrialization, water expansion, or plastic waste accumulation based on spectral and spatial characteristics.
+  
+- A post-processing classifier interprets these results, distinguishing features like industrial sheds, new water bodies, or pollution zones.
+  
+-  Once segmented and labeled, the affected areas are quantified in square kilometers or hectares, and rates of change are calculated based on the time difference between the two images. For example, a detected shift of 0.9 km² from undeveloped land to industrial structures over five years indicates a development rate of 0.18 km² per year.
+  
+-  Finally, all outputs are visualized using overlays, heatmaps, and interactive charts. This end-to-end pipeline transforms raw satellite imagery into actionable spatial intelligence for environmental monitoring and planning.
 
 ## Workflow Summary
 
