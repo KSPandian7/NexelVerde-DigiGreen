@@ -17,6 +17,11 @@ In an era of rapid industrialization and digital transformation, our environment
 5. Build a user-friendly web-based frontend that allows users to upload satellite image pairs and view analysis results, including segmented change maps, rate of change, and classified areas.
 
 ## Project Workflow
+<p align="center">
+ 
+   <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/3ec3b222-1707-467c-8dd6-bb8464a1704b" align="center" />
+</p>   
+
 
 1. Collect Real World Data - Satellite imagery, historical GIS layers, and ground-level photographs are gathered for the targeted regions.
 2. Database - The collected data is stored using NoSQL databases (e.g., MongoDB) for efficient access and scalability.
