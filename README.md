@@ -2,11 +2,27 @@
 
 ## EcoSat: A GIS-Powered Environmental Monitoring Platform
 
-EcoSat is a geospatial intelligence platform designed to detect and quantify key environmental changes—specifically deforestation, industrialization, plastic waste accumulation, water scarcity, and river encroachment—by comparing satellite imagery across time. Built as part of the DigiGreen Hackathon 2025, the project uses deep learning, remote sensing, and GIS techniques to analyze high-resolution satellite data and generate actionable insights to support environmental conservation efforts.
+- EcoSat is a geospatial intelligence platform designed to detect and quantify key environmental changes as,
+  
+   -  Deforestation
+   -  Industrialization
+   -  Plastic Waste Accumulation
+   -  Water Scarcity
+   -  River Encroachment
+     
+ - For the above issues the data will be fetched by comparing satellite imagery across time.
+   
+ - Built as part of the DigiGreen Hackathon 2025,<br>
+ 
+    The project executes with,
+   -  Deep Learning
+   -  Remote Sensing
+   -  GIS techniques
+ - The above mentioned studies helps to analyze high-resolution satellite data and generate actionable insights to support environmental conservation efforts.
 
 ## Problem Statement 
 
-In an era of rapid industrialization and digital transformation, our environment is facing unprecedented challenges—including plastic pollution, e-waste, deforestation, water scarcity, and climate change.EcoSat addresses this challenge by leveraging Earth observation data and modern machine learning techniques to automatically detect and visualize environmental degradation over time.
+In the era of rapid industrialization and digital transformation, our environment is facing unprecedented challenges—including plastic pollution, e-waste, deforestation, water scarcity, and climate change.EcoSat addresses this challenge by leveraging Earth observation data and modern machine learning techniques to automatically detect and visualize environmental degradation over time.
 
 ## Project Objectives
 
