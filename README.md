@@ -56,9 +56,11 @@ We use a Siamese UNet model that takes a pair of satellite images as input and o
 1. Deep Learning: PyTorch, TensorFlow, Albumentations
 2. Satellite Data: Google Earth Engine, SentinelHub, Landsat 8
 3. GIS and Raster Processing: Rasterio, GDAL, GeoPandas, OpenCV
-4. Frontend : Leaflet.js, React.js
-5. Backend/API: Flask or FastAPI
-6. Visualization: Matplotlib, Folium, QGIS
+4. Database: MongoDB,NoSQL
+5. Frontend : Leaflet.js, React.js
+6. Cloud: AWS
+7. Backend/API: Flask or FastAPI
+8. Visualization: Matplotlib, Folium, QGIS
 
 ## Future Enhancement
 
