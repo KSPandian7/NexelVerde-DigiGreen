@@ -1,6 +1,8 @@
 # NexelVerde-DigiGreen
+![1](https://github.com/user-attachments/assets/2b1d2d0e-d899-484b-a4c4-dd93b34d1c33)
 
 ## EcoSat: A GIS-Powered Environmental Monitoring Platform
+![2](https://github.com/user-attachments/assets/56e9e80f-aed5-46c8-a40e-0ffa4ff5f44a)
 
 - EcoSat is a geospatial intelligence platform designed to detect and quantify key environmental changes as,
   
@@ -19,6 +21,7 @@
    -  Remote Sensing
    -  GIS techniques
  - The above mentioned studies helps to analyze high-resolution satellite data and generate actionable insights to support environmental conservation efforts.
+![4](https://github.com/user-attachments/assets/a6282f6a-90da-4bf5-97d1-4e9adfc02926)
 
 ## Problem Statement 
 
@@ -162,11 +165,8 @@
 -   Long term, EcoSat could evolve into a mobile-friendly tool that provides rapid alerts to environmental authorities when significant land use changes are detected, enabling more timely interventions and conservation decisions.
  
 ## Conclusion
+EcoSat turns satellite imagery into actionable insights, detecting key environmental changes like deforestation, water scarcity, and pollution. Built for researchers and policymakers, it supports smarter, data-driven decisions for a more sustainable future.
 
-- EcoSat was developed with the goal of transforming raw satellite imagery into actionable environmental insights.
 
-- By combining the power of deep learning with geospatial data analysis, the platform enables efficient detection of critical land-use changes—such as deforestation, industrialization, plastic accumulation, water scarcity, and river encroachment—across time.
+![14](https://github.com/user-attachments/assets/281e335a-8e44-440c-803c-d2bde232e8e0)
 
--   This tool is designed to support researchers, environmental agencies, and policymakers in understanding the pace and scale of ecological transformation.
-
--   As we continue to expand its capabilities and refine its accuracy, EcoSat represents a meaningful step toward scalable, data-driven environmental monitoring for a more sustainable future.
